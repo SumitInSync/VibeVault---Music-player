@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <style>
+   header .song_side::before {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 288px;
+    background: url(./file.png);
+    opacity: 70%;
+    background-size: 350px 443px; /* Width and height in pixels */
+    background-position-x: 430px;
+    background-position-y: 1px;
+    background-repeat: no-repeat;
+    z-index: -1;
+    transition: 0.3s ease-in;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu_side">
+            <h6 id="menu_list_active_btn"><i class='bx bxs-playlist'></i></h6>
+            <a href="index.html" style="text-decoration: none;"><h1> <i class='bx bx-headphone' style="color: rgb(255, 32, 32);"></i>VibeVault </h1></a>
+            <div class="playlist">
+                <h4 class="active"><span></span><i class='bx bxs-music' undefined ></i>Playlist</h4>
+                <h4><span></span><i class='bx bxs-music' undefined ></i>Last Listening</h4>
+                <h4><span></span><i class='bx bxs-music' undefined ></i>Recommanded</h4>
+            </div>
+            <div class="menu-song">
+                <li class="songItem songI">
+                    <span>01</span>
+                    <img src="images/1.jpg" alt="">
+                    <h5>On My Way<br>
+                        <div class="subtitle">Alan Walker</div></h5>
+                    <i class='bx playListPlay bx-play-circle' id="1"></i>
+                </li>
+                <li class="songItem songI">
+                    <span>02</span>
+                    <img src="images/2.jpg" alt="">
+                    <h5>On My Way<br><div class="subtitle">Alan Walker</div></h5>
+                    <i class='bx playListPlay bx-play-circle' id="2"></i>
+                </li>
+                <li class="songItem songI">
+                    <span>03</span>
+                    <img src="https://i1.sndcdn.com/artworks-000580919054-haidkz-t500x500.jpg" alt="">
+                    <h5>On My Way<br><div class="subtitle">Alan Walker</div></h5>
+                    <i class='bx playListPlay bx-play-circle' id="3"></i>
+                </li>
+                <li class="songItem songI">
+                    <span>04</span>
+                    <img src="https://i1.sndcdn.com/artworks-000580919054-haidkz-t500x500.jpg" alt="">
+                    <h5>On My Way<br><div class="subtitle">Alan Walker</div></h5>
+                    <i class='bx playListPlay bx-play-circle' id="4"></i>
+                </li>
+                <li class="songItem songI">
+                    <span>05</span>
+                    <img src="https://i1.sndcdn.com/artworks-000580919054-haidkz-t500x500.jpg" alt="">
+                    <h5>On My Way<br><div class="subtitle">Alan Walker</div></h5>
+                    <i class='bx playListPlay bx-play-circle' id="5"></i>
+                </li>
+                <li class="songItem songI">
+                    <span>06</span>
+                    <img src="https://i1.sndcdn.com/artworks-000580919054-haidkz-t500x500.jpg" alt="">
+                    <h5>On My Way<br><div class="subtitle">Alan Walker</div></h5>
+                    <i class='bx playListPlay bx-play-circle' id="6"></i>
+                </li>
+                <li class="songItem songI">
+                    <span>07</span>
+                    <img src="https://i1.sndcdn.com/artworks-000580919054-haidkz-t500x500.jpg" alt="">
+                    <h5>On My Way<br><div class="subtitle">Alan Walker</div></h5>
+                    <i class='bx playListPlay bx-play-circle' id="7"></i>
+                </li>
+                <li class="songItem songI">
+                    <span>08</span>
+                    <img src="https://i1.sndcdn.com/artworks-000580919054-haidkz-t500x500.jpg" alt="">
+                    <h5>On My Way<br><div class="subtitle">Alan Walker</div></h5>
+                    <i class='bx playListPlay bx-play-circle' id="8"></i>
+                </li>
+            
+            </div>
+        </div>
+        <div class="song_side">
+            <nav>
+                <ul>
+                    <li>DISCOVER <span></span></li>
+                    <li>MY LIBRARY</li>
+                    <li>RADIO</li>
+                </ul>
+                <div class="search">
+                    <i class='bx bx-search' ></i>
+                    <input type="text" placeholder="Search">
+                    <div class="search_result">
+                        <!-- <a href="" class="card">
+                            <img src="images/1.jpg" alt="">
+                            <div class="content">
+                                Dilbar
+                                <div class="subtitle">Neha Kakkar</div>
+                            </div>
+                        </a> -->
+                       
+                     
+                        
+                    </div>
+                </div>
+                <div class="user">
+                    <img src="./images/user.jpg" alt="">
+                </div>
+            </nav>
+            <div class="content">
+                <h1>Arjit Singh</h1>
+                <p>You were the shadow to my light did you feel us Another start you fade <br> Away afraid our aim us out of sight Wanna see us Alive</p>
+                <div class="buttons">
+                    <button>PLAY</button>
+                    <button>FOLLOW</button>
+                </div>
+            </div>
+            <div class="popular-song">
+                <div class="h4">
+                    <h4>Popular Song</h4>
+                    <div class="btn_s">
+                        <i class='bx bx-left-arrow-alt' id="pop_song_left"></i>
+                        <i class='bx bx-right-arrow-alt' id="pop_song_right" ></i>
+                    </div>
+                    </div>
+                </div>
+                <div class="pop-song">
+                    <li class="songItem popS">
+                        <div class="img_play">
+                            <img src="https://i1.sndcdn.com/artworks-000580919054-haidkz-t500x500.jpg" alt="">
+                            <i class='bx playListPlay bx-play-circle' id="1"></i>
+                        </div>
+
+                        <h5>On My Way<br><div class="subtitle">Alan Walker</div></h5>
+                       
+                    </li>
+                    <li class="songItem popS">
+                        <div class="img_play">
+                            <img src="https://i1.sndcdn.com/artworks-000580919054-haidkz-t500x500.jpg" alt="">
+                            <i class='bx playListPlay bx-play-circle' id="2"></i>
+                        </div>
+
+                        <h5>On My Way<br><div class="subtitle">Alan Walker</div></h5>
+                       
+                    </li>
+                    <li class="songItem popS">
+                        <div class="img_play">
+                            <img src="https://i1.sndcdn.com/artworks-000580919054-haidkz-t500x500.jpg" alt="">
+                            <i class='bx playListPlay bx-play-circle' id="3"></i>
+                        </div>
+
+                        <h5>On My Way<br><div class="subtitle">Alan Walker</div></h5>
+                       
+                    </li>
+                    <li class="songItem popS">
+                        <div class="img_play">
+                            <img src="https://i1.sndcdn.com/artworks-000580919054-haidkz-t500x500.jpg" alt="">
+                            <i class='bx playListPlay bx-play-circle' id="4"></i>
+                        </div>
+
+                        <h5>On My Way<br><div class="subtitle">Alan Walker</div></h5>
+                       
+                    </li>
+                    <li class="songItem popS">
+                        <div class="img_play">
+                            <img src="https://i1.sndcdn.com/artworks-000580919054-haidkz-t500x500.jpg" alt="">
+                            <i class='bx playListPlay bx-play-circle' id="5"></i>
+                        </div>
+
+                        <h5>On My Way<br><div class="subtitle">Alan Walker</div></h5>
+                       
+                    </li>
+                    <li class="songItem popS">
+                        <div class="img_play">
+                            <img src="https://i1.sndcdn.com/artworks-000580919054-haidkz-t500x500.jpg" alt="">
+                            <i class='bx playListPlay bx-play-circle' id="6"></i>
+                        </div>
+
+                        <h5>On My Way<br><div class="subtitle">Alan Walker</div></h5>
+                       
+                    </li>
+                    <li class="songItem popS">
+                        <div class="img_play">
+                            <img src="https://i1.sndcdn.com/artworks-000580919054-haidkz-t500x500.jpg" alt="">
+                            <i class='bx playListPlay bx-play-circle' id="7"></i>
+                        </div>
+
+                        <h5>On My Way<br><div class="subtitle">Alan Walker</div></h5>
+                       
+                    </li>
+                    <li class="songItem popS">
+                        <div class="img_play">
+                            <img src="https://i1.sndcdn.com/artworks-000580919054-haidkz-t500x500.jpg" alt="">
+                            <i class='bx playListPlay bx-play-circle' id="8"></i>
+                        </div>
+
+                        <h5>On My Way<br><div class="subtitle">Alan Walker</div></h5>
+                       
+                    </li>
+                    <li class="songItem ">
+                        <div class="img_play">
+                            <img src="https://i1.sndcdn.com/artworks-000580919054-haidkz-t500x500.jpg" alt="">
+                            <i class='bx playListPlay bx-play-circle' id="2"></i>
+                        </div>
+
+                        <h5>On My Way<br><div class="subtitle">Alan Walker</div></h5>
+                       
+                    </li>
+                    <li class="songItem ">
+                        <div class="img_play">
+                            <img src="https://i1.sndcdn.com/artworks-000580919054-haidkz-t500x500.jpg" alt="">
+                            <i class='bx playListPlay bx-play-circle' id="3"></i>
+                        </div>
+
+                        <h5>On My Way<br><div class="subtitle">Alan Walker</div></h5>
+                       
+                    </li>
+                    <li class="songItem ">
+                        <div class="img_play">
+                            <img src="https://i1.sndcdn.com/artworks-000580919054-haidkz-t500x500.jpg" alt="">
+                            <i class='bx playListPlay bx-play-circle' id="4"></i>
+                        </div>
+
+                        <h5>On My Way<br><div class="subtitle">Alan Walker</div></h5>
+                       
+                    </li>
+                </div>
+                <div class="popular-artist">
+                    <div class="h4">
+                        <h4>Popular Artists</h4>
+                        <div class="btn_s">
+                            <i class='bx bx-left-arrow-alt' id="pop_artist_left"></i>
+                            <i class='bx bx-right-arrow-alt' id="pop_artist_right" ></i>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="items ">
+                        <li >
+                            <img src="https://lalluram.com/wp-content/uploads/2024/04/CThXLeNL_400x400.jpg" alt="">
+                        </li>
+                        <li >
+                            <img src="images/artist/armaan.jpg" alt="">
+                        </li>
+                        <li >
+                            <img src="images/artist/shreya.jpg" alt="">
+                        </li>
+                        <li >
+                            <img src="images/artist/pritam.jpg" alt="">
+                        </li>
+                        <li >
+                            <img src="images/artist/neha.jpeg"   alt="">
+                        </li>
+                        <li >
+                            <img src="images/artist/badshA.jpg" alt="">
+                        </li>
+                        <li >
+                            <img src="images/artist/HONEY.jpg" alt="">
+                        </li>
+
+                        <li >
+                            <img src="images/artist/sunidhi.jpeg" alt="">
+                        </li>
+                        <li >
+                            <img src="images/artist/asess.jpeg" alt="">
+                        </li>
+                        <li >
+                            <img src="images/artist/iqlise.jpeg" alt="">
+                        </li>
+                        <li >
+                            <img src="images/artist/guru.jpg" alt="">
+                        </li>
+                        <li >
+                            <img src="images/artist/krk.jpeg" alt="">
+                        </li>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+
+
+        <div class="master-play">
+            <div class="wave" id="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+            </div>
+            <img src="images/arjit/1.jpg" alt="" id="poster_master_play"> 
+            <h5 id="title">
+                Soulmate
+                <div class="subtitle">Arjit Singh, Badasha</div>
+            </h5>
+            <div class="icon">
+                <i class='bx shuffle bxs-music' >next</i>
+                <i class='bx bx-skip-previous' id="back" ></i>
+                <i class='bx bx-play' id="masterPlayBtn" ></i>
+                <i class='bx bx-skip-next' id="next"></i>
+                <a href="" download  id="download-music"><i class='bx bxs-cloud-download'id="download_music" ></i></a>
+            </div>
+            <span id="currentStart" >0:00</span>
+            <div class="bar">
+                <input type="range" id="seek" min="0" max="100"> 
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+            </div>
+            <span id="currentEnd">0:30</span>
+            <div class="vol">
+                <i class='bx bxs-volume-full' id="vol-icon"></i>
+                <input type="range" min="0" max="100" id="vol">
+                <div class="vol-bar"></div>
+                <div class="vol-dot" id="vol-dot"></div>
+            </div>
+
+            </div>
+        </div>
+    </header>
+
+
+
+    <script src="arjit.js"></script>
+</body>
+</html>
